@@ -38,7 +38,7 @@ CFLAGS="$EXTRA_CFLAGS ${CI_CFLAGS} -I ${PWD}/include/ -I ${PWD}/src/ \
 ${CC} -c ${CFLAGS} src/*.c
 ar rcs libxenposix.a mini_libc.o fmt_fp.o dtoa.o strtol.o
 
-echo "(-cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\" $(cat flags/minios-libs.tmp))" > flags/minios-libs
-echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/minios-cflags.tmp))" > flags/minios-cflags
-echo "(-cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\" $(cat flags/posix-libs.tmp))" > flags/posix-libs
-echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/posix-cflags.tmp))" > flags/posix-cflags
+echo "(-cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\" $(cat flags/minios-libs.tmp))" > flags/minios-libs.sexp
+echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/minios-cflags.tmp))" > flags/minios-cflags.sexp
+echo "(-cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\" $(cat flags/posix-libs.tmp))" > flags/posix-libs.sexp
+echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/posix-cflags.tmp))" > flags/posix-cflags.sexp

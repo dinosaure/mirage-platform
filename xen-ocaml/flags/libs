@@ -1,0 +1,1 @@
+( -cclib "-L/home/dinosaure/.opam/4.08.1/lib/pkgconfig/../../lib/minios-xen -L/home/dinosaure/.opam/4.08.1/lib -lminios -T/home/dinosaure/.opam/4.08.1/lib/pkgconfig/../../lib/minios-xen/libminios.lds -m elf_x86_64 -lx86_64 -lopenlibm")

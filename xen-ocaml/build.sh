@@ -150,5 +150,5 @@ fi
 
 cd ..
 
-echo "($(cat flags/libs.tmp) -cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\")" > flags/libs
-echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/cflags.tmp))" > flags/cflags
+echo "($(cat flags/libs.tmp) -cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\")" > flags/libs.sexp
+echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/cflags.tmp))" > flags/cflags.sexp
