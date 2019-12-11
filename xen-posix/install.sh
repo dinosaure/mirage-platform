@@ -12,6 +12,8 @@ cp flags/minios-cflags.sexp $odir/mirage-xen-posix/
 cp flags/posix-cflags.sexp $odir/mirage-xen-posix/
 cp flags/posix-libs.sexp $odir/mirage-xen-posix/
 cp flags/minios-libs.sexp $odir/mirage-xen-posix/
+cp flags/minios-ldflags $odir/mirage-xen-posix/
+cp flags/posix-ldflags $odir/mirage-xen-posix/
 touch $odir/mirage-xen-posix/META
 mkdir -p $odir/pkgconfig
 cp mirage-xen-minios.pc $odir/pkgconfig/mirage-xen-minios.pc
