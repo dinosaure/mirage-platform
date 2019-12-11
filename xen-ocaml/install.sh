@@ -27,6 +27,7 @@ cp ocaml-src/$ASMRUN_FOLDER/libasmrun.a $odir/mirage-xen-ocaml/libasmrunxen.a
 cp ocaml-src/libxenotherlibs.a $odir/mirage-xen-ocaml/libxenotherlibs.a
 cp flags/cflags.sexp $odir/mirage-xen-ocaml/
 cp flags/libs.sexp $odir/mirage-xen-ocaml/
+cp flags/ldflags $odir/mirage-xen-ocaml/
 touch $odir/mirage-xen-ocaml/META
 mkdir -p $odir/pkgconfig
 cp mirage-xen-ocaml.pc $odir/pkgconfig/mirage-xen-ocaml.pc
