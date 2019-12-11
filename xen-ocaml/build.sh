@@ -150,7 +150,7 @@ fi
 
 cd ..
 
-echo "($(cat flags/libs.tmp) -cclib \"$(pkg-config libminios-xen openlibm --libs | xargs)\")" > flags/libs.sexp
+echo "($(cat flags/libs.tmp))" > flags/libs.sexp
 echo "$(pkg-config libminios-xen openlibm --libs)" > flags/ldflags
 sed -i flags/ldflags -E -e 's/[[:blank:]]+/\n/g'
 echo "($(pkg-config libminios-xen openlibm --cflags | xargs) $(cat flags/cflags.tmp))" > flags/cflags.sexp
